@@ -14,12 +14,12 @@ public class Main {
 		System.out.println("LinearSearch: ");
 		
 		Product search = ProductSearch.linearSearch(products, 222);
-		System.out.println(search != null ? "Product found: " + search : "Product has not found");
+		System.out.println(search!=null ? "Product found: " + search : "Product has not found");
 		
 		System.out.println("BinarySearch: ");
 		Arrays.sort(products, Comparator.comparingInt(Product::getPrdtId));
 		search = ProductSearch.binarySearch(products, 123);
-		System.out.println(search != null ? "Product found: " + search : "Product has not found");
+		System.out.println(search!=null ? "Product found: " + search : "Product has not found");
 
 	}
 
